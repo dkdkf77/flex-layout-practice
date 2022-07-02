@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex- align-slef</title>
+    <style>
+        .container {
+            width: 50%;
+            height: 300px;
+            margin: 0 auto;
+            border: 3px solid red;
+            display: flex;
+            align-items: center;
+        }
+
+        .container div{
+            width: 100px;
+            border: 1px solid #000;
+            background-color: bisque;
+            height: 100px;
+        }
+/* 
+        #box3 {
+            align-self:flex-end;
+        } */
+
+        /* flex-grow =  확장 될때 크기의 비율을 잡아 준다 */
+
+        /* flex-shrink =  그로우의 반대 줄어 들때 크기의 비율을 잡아 준다 */
+
+        #box1 {
+            order:1;
+            flex-shrink: 1;
+        }
+        #box2 {
+            order:2;
+            flex-shrink: 2;
+        }
+        #box3 {
+            order:3;
+            flex-shrink: 3;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>flex-align-self</h2>
+    <div class="container container1">
+        <div id="box1">
+            <p>1</p>
+        </div>
+        <div id="box2">
+            <p>2</p>
+        </div>
+        <div id="box3">
+            <p>3</p>
+        </div>
+    </div>
+</body>
+</html>

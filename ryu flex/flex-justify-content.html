@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex- justify-content</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 100px;
+            margin: 0 auto;
+            border: 3px solid red;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: space-around;
+        }
+
+        .container1 {
+            justify-content: flex-start;
+        }
+        .container2 {
+            justify-content: flex-end;
+        }
+        .container3 {
+            justify-content: center;
+        }
+
+        .container4 {
+            justify-content: space-between;
+        }
+        .container5 {
+            justify-content: space-around;
+        }
+
+        .container6 {
+            justify-content: space-evenly;
+        }
+
+        .container div{
+            width: 100px;
+            border: 1px solid #000;
+            background-color: bisque;
+            height: 200px;
+        }
+
+        
+
+        h2 {
+            font-size: 40px;
+            font-weight: 900;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>flex-justify-content-flex-strat</h2>
+    <div class="container container1">
+        <div id="box">
+            <h2>1</h2>
+        </div>
+        <div id="box">
+            <h2>2</h2>
+        </div>
+        <div id="box">
+            <h2>3</h2>
+        </div>
+    </div>
+    <h2>flex-justify-content-flex-end</h2>
+    <div class="container container2">
+        <div id="box">
+            <h2>1</h2>
+        </div>
+        <div id="box">
+            <h2>2</h2>
+        </div>
+        <div id="box">
+            <h2>3</h2>
+        </div>
+        
+        
+    </div>
+    <h2>flex-justify-content-center</h2>
+    <div class="container container3">
+        <div id="box">
+            <h2>1</h2>
+        </div>
+        <div id="box">
+            <h2>2</h2>
+        </div>
+        <div id="box">
+            <h2>3</h2>
+        </div>
+        
+        
+    </div>
+    <h2>flex-justify-content-space-between</h2>
+    <div class="container container4">
+        <div id="box">
+            <h2>1</h2>
+        </div>
+        <div id="box">
+            <h2>2</h2>
+        </div>
+        <div id="box">
+            <h2>3</h2>
+        </div>
+        
+        
+    </div>
+    <h2>flex-justify-content-space-around</h2>
+    <div class="container container5">
+        <div id="box">
+            <h2>1</h2>
+        </div>
+        <div id="box">
+            <h2>2</h2>
+        </div>
+        <div id="box">
+            <h2>3</h2>
+        </div>
+        
+        
+    </div>
+
+    <h2>flex-justify-content-space-evenly</h2>
+    <div class="container container6">
+        <div id="box">
+            <h2>1</h2>
+        </div>
+        <div id="box">
+            <h2>2</h2>
+        </div>
+        <div id="box">
+            <h2>3</h2>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
